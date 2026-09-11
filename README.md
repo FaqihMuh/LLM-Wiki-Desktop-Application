@@ -1,3 +1,7 @@
+## Download
+
+The latest Windows installer is available in the Releases section.
+
 ## Documentation
 
 For detailed instructions on installing and using LLM Wiki Desktop, see the [User Guide](USER_GUIDE.md).
