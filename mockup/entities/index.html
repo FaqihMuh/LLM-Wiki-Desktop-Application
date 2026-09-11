@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>LLM Wiki Operating System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ===================================================== -->
+
+<header class="header">
+
+<div>
+
+<div class="logo">
+
+LLM Wiki Operating System
+
+</div>
+
+<div class="subtitle">
+
+Persistent Memory Research Assistant
+
+</div>
+
+</div>
+
+<div class="header-status">
+
+Entity Explorer
+
+</div>
+
+</header>
+
+<!-- ===================================================== -->
+
+<main class="main">
+
+<!-- ================= Sidebar ================= -->
+
+<aside class="sidebar">
+
+<div class="section-title">
+
+Navigation
+
+</div>
+
+<ul class="menu">
+
+<li>📄 Raw Documents</li>
+
+<li>📑 Summaries</li>
+
+<li class="active">🧠 Entities</li>
+
+<li>📚 Index</li>
+
+<li>📜 Operation Log</li>
+
+</ul>
+
+<div class="divider"></div>
+
+<div class="section-title">
+
+Operations
+
+</div>
+
+<ul class="menu">
+
+<li>🔍 Query</li>
+
+<li>📥 Ingest</li>
+
+<li>🩺 Maintenance</li>
+
+</ul>
+
+</aside>
+
+<!-- ================= Workspace ================= -->
+
+<section class="workspace">
+
+<!-- Search -->
+
+<div class="card">
+
+<div class="card-title">
+
+Search Entity
+
+</div>
+
+<div class="search-area">
+
+<input
+
+type="text"
+
+placeholder="Search by entity name..."
+
+>
+
+</div>
+
+</div>
+
+<!-- Entity Table -->
+
+<div class="card">
+
+<div class="card-title">
+
+Entities
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Type</th>
+
+<th>Status</th>
+
+<th>Confidence</th>
+
+<th>Updated</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr class="selected">
+
+<td>Vector RAG</td>
+
+<td>Framework</td>
+
+<td>Established</td>
+
+<td>High</td>
+
+<td>2026-06-26</td>
+
+</tr>
+
+<tr>
+
+<td>LLM Wiki</td>
+
+<td>Framework</td>
+
+<td>Established</td>
+
+<td>High</td>
+
+<td>2026-06-25</td>
+
+</tr>
+
+<tr>
+
+<td>xMemory</td>
+
+<td>Framework</td>
+
+<td>Emerging</td>
+
+<td>Medium</td>
+
+<td>2026-06-26</td>
+
+</tr>
+
+<tr>
+
+<td>Agent Memory</td>
+
+<td>Concept</td>
+
+<td>Emerging</td>
+
+<td>Medium</td>
+
+<td>2026-06-26</td>
+
+</tr>
+
+<tr>
+
+<td>Error Book</td>
+
+<td>Method</td>
+
+<td>Emerging</td>
+
+<td>Medium</td>
+
+<td>2026-06-25</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="pagination">
+
+<button>◀ Previous</button>
+
+<span>
+
+Page 1 of 2
+
+</span>
+
+<button>Next ▶</button>
+
+</div>
+
+</div>
+
+<!-- Entity Viewer -->
+
+<div class="card viewer-card">
+
+<div class="card-title">
+
+Entity Viewer
+
+</div>
+
+<div class="viewer">
+
+<h2>
+
+Vector RAG
+
+</h2>
+
+<div class="meta-grid">
+
+<div>
+
+<strong>Type</strong>
+
+Framework
+
+</div>
+
+<div>
+
+<strong>Status</strong>
+
+Established
+
+</div>
+
+<div>
+
+<strong>Confidence</strong>
+
+High
+
+</div>
+
+<div>
+
+<strong>Last Updated</strong>
+
+2026-06-26
+
+</div>
+
+</div>
+
+<h3>
+
+Definition
+
+</h3>
+
+<p>
+
+Vector RAG is a retrieve-then-generate framework that retrieves relevant document chunks using vector similarity before passing them to a language model for response generation.
+
+</p>
+
+<h3>
+
+Aliases
+
+</h3>
+
+<ul>
+
+<li>Naive RAG</li>
+
+</ul>
+
+<h3>
+
+Related Entities
+
+</h3>
+
+<ul>
+
+<li>LLM Wiki</li>
+
+<li>Decomposition RAG</li>
+
+<li>xMemory</li>
+
+</ul>
+
+<h3>
+
+Sources
+
+</h3>
+
+<ul>
+
+<li>vector_rag_vs_llm_wiki_2605_18490.md</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- Knowledge Graph -->
+
+<div class="card graph-card">
+
+<div class="card-title">
+
+Knowledge Graph
+
+</div>
+
+<div class="graph-placeholder">
+
+<div class="graph-box">
+
+Graph Preview
+
+<br><br>
+
+(PyVis / NetworkX)
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Inspector ================= -->
+
+<aside class="inspector">
+
+<div class="panel">
+
+<h3>
+
+Selected Entity
+
+</h3>
+
+<div class="row">
+
+<span>Name</span>
+
+<span>Vector RAG</span>
+
+</div>
+
+<div class="row">
+
+<span>Type</span>
+
+<span>Framework</span>
+
+</div>
+
+<div class="row">
+
+<span>Status</span>
+
+<span>Established</span>
+
+</div>
+
+<div class="row">
+
+<span>Confidence</span>
+
+<span>High</span>
+
+</div>
+
+</div>
+
+</aside>
+
+</main>
+
+<!-- ===================================================== -->
+
+<footer class="footer">
+
+Entity Explorer • Read Only
+
+</footer>
+
+</div>
+
+</body>
+
+</html>

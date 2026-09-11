@@ -1,0 +1,17 @@
+# Runtime dependencies for the LLM Wiki desktop application (gui/).
+#
+# This is a hand-curated list, not a `pip freeze` dump: it lists only
+# the packages actually imported by gui/, plus rapidocr-onnxruntime below
+# (imported internally by pymupdf4llm's OCR path, not by gui/ directly —
+# it must still be installed for PyMuPDF4LLM's automatic OCR to find an
+# OCR engine). The Claude CLI itself is a separate external tool
+# (see README_BUILD.md) and is not a Python dependency.
+
+PySide6==6.11.1
+pymupdf4llm==1.27.2.3
+pymupdf==1.27.2.3
+# OCR engine used automatically by pymupdf4llm.to_markdown(use_ocr=True)
+# for pages with no extractable text layer (Revision 7). Not imported
+# directly by gui/ — pymupdf4llm selects and imports it internally.
+rapidocr-onnxruntime==1.4.4
+certifi==2026.2.25

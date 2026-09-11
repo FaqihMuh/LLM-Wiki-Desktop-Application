@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>LLM Wiki Operating System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ===================================================== -->
+
+<header class="header">
+
+<div>
+
+<div class="logo">
+
+LLM Wiki Operating System
+
+</div>
+
+<div class="subtitle">
+
+Persistent Memory Research Assistant
+
+</div>
+
+</div>
+
+<div class="header-status">
+
+Operation Log
+
+</div>
+
+</header>
+
+<!-- ===================================================== -->
+
+<main class="main">
+
+<!-- ================= Sidebar ================= -->
+
+<aside class="sidebar">
+
+<div class="section-title">
+
+Navigation
+
+</div>
+
+<ul class="menu">
+
+<li>📄 Raw Documents</li>
+
+<li>📑 Summaries</li>
+
+<li>🧠 Entities</li>
+
+<li>📚 Index</li>
+
+<li class="active">📜 Operation Log</li>
+
+</ul>
+
+<div class="divider"></div>
+
+<div class="section-title">
+
+Operations
+
+</div>
+
+<ul class="menu">
+
+<li>🔍 Query</li>
+
+<li>📥 Ingest</li>
+
+<li>🩺 Maintenance</li>
+
+</ul>
+
+</aside>
+
+<!-- ================= Workspace ================= -->
+
+<section class="workspace">
+
+<!-- Search -->
+
+<div class="card">
+
+<div class="card-title">
+
+Search Operation Log
+
+</div>
+
+<div class="search-area">
+
+<input
+
+type="text"
+
+placeholder="Search by document, operation, result, or date..."
+
+>
+
+</div>
+
+</div>
+
+<!-- Log Table -->
+
+<div class="card">
+
+<div class="card-title">
+
+Operation History
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Time</th>
+
+<th>Operation</th>
+
+<th>Document</th>
+
+<th>Result</th>
+
+<th>Duration</th>
+
+<th>Tokens</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr class="selected">
+
+<td>2026-06-26 10:42</td>
+
+<td>Ingest</td>
+
+<td>Beyond RAG for Agent Memory</td>
+
+<td>SUCCESS</td>
+
+<td>6m 27s</td>
+
+<td>78,214</td>
+
+</tr>
+
+<tr>
+
+<td>2026-06-26 11:18</td>
+
+<td>Query</td>
+
+<td>Knowledge Base</td>
+
+<td>SUCCESS</td>
+
+<td>18 s</td>
+
+<td>8,214</td>
+
+</tr>
+
+<tr>
+
+<td>2026-06-26 13:10</td>
+
+<td>Maintenance</td>
+
+<td>Entire Persistent Memory</td>
+
+<td>SUCCESS</td>
+
+<td>4m 37s</td>
+
+<td>31,105</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="pagination">
+
+<button>◀ Previous</button>
+
+<span>
+
+Page 1 of 1
+
+</span>
+
+<button>Next ▶</button>
+
+</div>
+
+</div>
+
+<!-- Log Viewer -->
+
+<div class="card viewer-card">
+
+<div class="card-title">
+
+Log Viewer
+
+</div>
+
+<div class="viewer">
+
+<h2>
+
+Ingest Operation
+
+</h2>
+
+<div class="meta-grid">
+
+<div>
+
+<strong>Timestamp</strong>
+
+2026-06-26 10:42
+
+</div>
+
+<div>
+
+<strong>Result</strong>
+
+SUCCESS
+
+</div>
+
+<div>
+
+<strong>Document</strong>
+
+Beyond RAG for Agent Memory
+
+</div>
+
+<div>
+
+<strong>Source</strong>
+
+raw/2602.02007v3.pdf
+
+</div>
+
+</div>
+
+<h3>
+
+Pipeline
+
+</h3>
+
+<ul>
+
+<li>✓ PRECHECK</li>
+
+<li>✓ READ_SOURCE</li>
+
+<li>✓ CREATE_SUMMARY</li>
+
+<li>✓ EXTRACT_CANDIDATE_ENTITIES</li>
+
+<li>✓ ENTITY_RESOLUTION</li>
+
+<li>✓ UPDATE_ENTITIES</li>
+
+<li>✓ UPDATE_INDEX</li>
+
+<li>✓ UPDATE_LOG</li>
+
+</ul>
+
+<h3>
+
+Execution Time
+
+</h3>
+
+<ul>
+
+<li>PRECHECK : 2 s</li>
+
+<li>READ_SOURCE : 45 s</li>
+
+<li>CREATE_SUMMARY : 5 s</li>
+
+<li>ENTITY_RESOLUTION : 2 s</li>
+
+<li>UPDATE_ENTITIES : 10 s</li>
+
+<li>TOTAL : 6m 27s</li>
+
+</ul>
+
+<h3>
+
+Token Usage
+
+</h3>
+
+<ul>
+
+<li>Input : 48,530</li>
+
+<li>Output : 29,684</li>
+
+<li>Total : 78,214</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Inspector ================= -->
+
+<aside class="inspector">
+
+<div class="panel">
+
+<h3>
+
+Selected Log
+
+</h3>
+
+<div class="row">
+
+<span>Operation</span>
+
+<span>Ingest</span>
+
+</div>
+
+<div class="row">
+
+<span>Status</span>
+
+<span>SUCCESS</span>
+
+</div>
+
+<div class="row">
+
+<span>Document</span>
+
+<span>2602.02007</span>
+
+</div>
+
+<div class="row">
+
+<span>Duration</span>
+
+<span>6m 27s</span>
+
+</div>
+
+</div>
+
+</aside>
+
+</main>
+
+<footer class="footer">
+
+Operation Log • Read Only
+
+</footer>
+
+</div>
+
+</body>
+
+</html>

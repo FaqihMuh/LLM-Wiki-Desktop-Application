@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>LLM Wiki Operating System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================================= HEADER ================================= -->
+
+    <header class="header">
+
+        <div>
+
+            <div class="logo">
+
+                LLM Wiki Operating System
+
+            </div>
+
+            <div class="subtitle">
+
+                Persistent Memory Research Assistant
+
+            </div>
+
+        </div>
+
+        <div class="header-status">
+
+            Ingest Mode
+
+        </div>
+
+    </header>
+
+    <!-- ================================= MAIN ================================= -->
+
+    <main class="main">
+
+        <!-- ===================== SIDEBAR ===================== -->
+
+        <aside class="sidebar">
+
+            <div class="section-title">
+
+                Navigation
+
+            </div>
+
+            <ul class="menu">
+
+                <li>📄 Raw Documents</li>
+
+                <li>📑 Summaries</li>
+
+                <li>🧠 Entities</li>
+
+                <li>📚 Index</li>
+
+                <li>📜 Operation Log</li>
+
+            </ul>
+
+            <div class="divider"></div>
+
+            <div class="section-title">
+
+                Operations
+
+            </div>
+
+            <ul class="menu">
+
+                <li>🔍 Query</li>
+
+                <li class="active">📥 Ingest</li>
+
+                <li>🩺 Maintenance</li>
+
+            </ul>
+
+        </aside>
+
+        <!-- ===================== WORKSPACE ===================== -->
+
+        <section class="workspace">
+
+            <!-- MODE -->
+
+            <div class="card">
+
+                <div class="card-title">
+
+                    Ingest Mode
+
+                </div>
+
+                <div class="mode">
+
+                    <label>
+
+                        <input type="radio" checked>
+
+                        Manual
+
+                    </label>
+
+                    <label>
+
+                        <input type="radio">
+
+                        Automatic Queue
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- DOCUMENT -->
+
+            <div class="card">
+
+                <div class="card-title">
+
+                    Selected Document
+
+                </div>
+
+                <div class="document">
+
+                    <div>
+
+                        <span class="label">
+
+                            Filename
+
+                        </span>
+
+                        <span>
+
+                            2602.02007v3.pdf
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <span class="label">
+
+                            Pages
+
+                        </span>
+
+                        <span>
+
+                            18
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <span class="label">
+
+                            Size
+
+                        </span>
+
+                        <span>
+
+                            4.6 MB
+
+                        </span>
+
+                    </div>
+
+                    <div>
+
+                        <span class="label">
+
+                            Status
+
+                        </span>
+
+                        <span class="ready">
+
+                            Ready
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="actions">
+
+                    <button>
+
+                        Browse PDF
+
+                    </button>
+
+                    <button class="primary">
+
+                        Start Ingest
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- QUEUE + PIPELINE -->
+
+            <div class="split-layout">
+
+                <!-- QUEUE -->
+
+                <div class="card">
+
+                    <div class="card-title">
+
+                        Queue
+
+                    </div>
+
+                    <div class="queue">
+
+                        <div class="queue-item">
+
+                            <span>
+
+                                2605.18490v1.pdf
+
+                            </span>
+
+                            <span class="done">
+
+                                Completed
+
+                            </span>
+
+                        </div>
+
+                        <div class="queue-item">
+
+                            <span>
+
+                                2605.25480v2.pdf
+
+                            </span>
+
+                            <span class="running">
+
+                                Running
+
+                            </span>
+
+                        </div>
+
+                        <div class="queue-item">
+
+                            <span>
+
+                                2602.02007v3.pdf
+
+                            </span>
+
+                            <span class="waiting">
+
+                                Waiting
+
+                            </span>
+
+                        </div>
+
+                        <div class="queue-item">
+
+                            <span>
+
+                                future_paper.pdf
+
+                            </span>
+
+                            <span class="waiting">
+
+                                Waiting
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="actions">
+
+                        <button>
+
+                            Add PDF
+
+                        </button>
+
+                        <button>
+
+                            Clear Queue
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- PIPELINE -->
+
+                <div class="card">
+
+                    <div class="card-title">
+
+                        Pipeline
+
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="step done">
+
+                            ✓ PRECHECK
+
+                        </div>
+
+                        <div class="step done">
+
+                            ✓ READ SOURCE
+
+                        </div>
+
+                        <div class="step done">
+
+                            ✓ CREATE SUMMARY
+
+                        </div>
+
+                        <div class="step running">
+
+                            ● ENTITY RESOLUTION
+
+                        </div>
+
+                        <div class="step">
+
+                            ○ UPDATE ENTITY
+
+                        </div>
+
+                        <div class="step">
+
+                            ○ UPDATE INDEX
+
+                        </div>
+
+                        <div class="step">
+
+                            ○ UPDATE LOG
+
+                        </div>
+
+                        <div class="step">
+
+                            ○ COMPLETE
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- EXECUTION LOG -->
+
+            <div class="card log-card">
+
+                <div class="card-title">
+
+                    Execution Log
+
+                </div>
+
+                <div class="execution-log">
+
+<pre>
+09:12:10  Boot sequence completed
+
+09:12:14  Reading PDF...
+
+09:12:52  Extracting concepts...
+
+09:13:16  Summary created
+
+09:13:31  Candidate entities extracted
+
+09:13:42  Resolving entities...
+
+09:14:05  Updating Vector_RAG.md
+
+09:14:26  Updating xMemory.md
+
+09:14:48  Waiting...
+</pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================== INSPECTOR ===================== -->
+
+        <aside class="inspector">
+
+            <div class="panel">
+
+                <h3>
+
+                    Runtime
+
+                </h3>
+
+                <div class="row">
+
+                    <span>Status</span>
+
+                    <span class="running">
+
+                        Running
+
+                    </span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Elapsed</span>
+
+                    <span>
+
+                        03:24
+
+                    </span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Queue</span>
+
+                    <span>
+
+                        2 / 8
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>
+
+                    Current Document
+
+                </h3>
+
+                <div class="row">
+
+                    <span>
+
+                        Filename
+
+                    </span>
+
+                    <span>
+
+                        2605.25480v2.pdf
+
+                    </span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>
+
+                        Summary
+
+                    </span>
+
+                    <span>
+
+                        Creating
+
+                    </span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>
+
+                        Entities
+
+                    </span>
+
+                    <span>
+
+                        Updating
+
+                    </span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>
+
+                        Index
+
+                    </span>
+
+                    <span>
+
+                        Pending
+
+                    </span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>
+
+                        Log
+
+                    </span>
+
+                    <span>
+
+                        Pending
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>
+
+                    Progress
+
+                </h3>
+
+                <div class="progress">
+
+                    <div class="progress-bar">
+
+                    </div>
+
+                </div>
+
+                <div class="progress-label">
+
+                    68%
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+
+    <footer class="footer">
+
+        Ingest Running • Persistent Memory Updating
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>

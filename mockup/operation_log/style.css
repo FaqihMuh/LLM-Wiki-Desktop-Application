@@ -1,0 +1,488 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    background:#eef2f7;
+}
+
+/* ================================================= */
+
+.container{
+
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* ================================================= */
+
+.header{
+
+    height:70px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 28px;
+
+    background:#1f2937;
+
+    color:white;
+}
+
+.logo{
+
+    font-size:22px;
+
+    font-weight:700;
+}
+
+.subtitle{
+
+    margin-top:4px;
+
+    font-size:13px;
+
+    opacity:.8;
+}
+
+.header-status{
+
+    background:#2563eb;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+/* ================================================= */
+
+.main{
+
+    flex:1;
+
+    display:flex;
+
+    min-height:0;
+}
+
+/* ================================================= */
+
+.sidebar{
+
+    width:250px;
+
+    flex-shrink:0;
+
+    background:#f8fafc;
+
+    border-right:1px solid #dbe4ee;
+
+    padding:24px;
+
+    overflow-y:auto;
+}
+
+.section-title{
+
+    font-size:12px;
+
+    color:#64748b;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+}
+
+.menu{
+
+    list-style:none;
+
+    margin-bottom:28px;
+}
+
+.menu li{
+
+    padding:12px 14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    margin-bottom:6px;
+
+    transition:.2s;
+}
+
+.menu li:hover{
+
+    background:#e2e8f0;
+}
+
+.menu li.active{
+
+    background:#2563eb;
+
+    color:white;
+
+    font-weight:600;
+}
+
+.divider{
+
+    height:1px;
+
+    background:#dbe4ee;
+
+    margin:20px 0;
+}
+
+/* ================================================= */
+
+.workspace{
+
+    flex:1;
+
+    min-width:0;
+
+    overflow-y:auto;
+
+    padding:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    background:#f4f7fb;
+}
+
+/* ================================================= */
+
+.card{
+
+    background:white;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.05);
+
+    flex-shrink:0;
+}
+
+.card-title{
+
+    padding:14px 18px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    background:#f8fafc;
+
+    font-size:16px;
+
+    font-weight:700;
+}
+
+/* ================================================= */
+
+.search-area{
+
+    padding:20px;
+}
+
+.search-area input{
+
+    width:100%;
+
+    padding:12px 16px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    outline:none;
+}
+
+.search-area input:focus{
+
+    border-color:#2563eb;
+}
+
+/* ================================================= */
+
+.table-container{
+
+    max-height:260px;
+
+    overflow-y:auto;
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+thead{
+
+    position:sticky;
+
+    top:0;
+
+    background:#f8fafc;
+
+    z-index:1;
+}
+
+th{
+
+    text-align:left;
+
+    padding:14px 18px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#64748b;
+
+    font-size:13px;
+}
+
+td{
+
+    padding:14px 18px;
+
+    border-bottom:1px solid #eef2f7;
+
+    font-size:14px;
+}
+
+tbody tr{
+
+    cursor:pointer;
+
+    transition:.15s;
+}
+
+tbody tr:hover{
+
+    background:#f8fafc;
+}
+
+tbody tr.selected{
+
+    background:#dbeafe;
+}
+
+/* ================================================= */
+
+.pagination{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 20px;
+
+    border-top:1px solid #e5e7eb;
+}
+
+.pagination button{
+
+    border:none;
+
+    background:#e2e8f0;
+
+    border-radius:8px;
+
+    padding:8px 14px;
+
+    cursor:pointer;
+}
+
+.pagination button:hover{
+
+    background:#cbd5e1;
+}
+
+/* ================================================= */
+
+.viewer-card{
+
+    min-height:560px;
+}
+
+.viewer{
+
+    height:520px;
+
+    overflow-y:auto;
+
+    padding:24px;
+
+    line-height:1.8;
+}
+
+.viewer h2{
+
+    margin-bottom:18px;
+}
+
+.viewer h3{
+
+    margin-top:22px;
+
+    margin-bottom:10px;
+}
+
+.viewer ul{
+
+    margin-left:22px;
+}
+
+.meta-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+    margin-bottom:24px;
+}
+
+/* ================================================= */
+
+.inspector{
+
+    width:320px;
+
+    flex-shrink:0;
+
+    overflow-y:auto;
+
+    background:#fafafa;
+
+    border-left:1px solid #e5e7eb;
+
+    padding:22px;
+}
+
+.panel{
+
+    background:white;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.05);
+}
+
+.panel h3{
+
+    margin-bottom:14px;
+
+    font-size:16px;
+}
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:12px 0;
+
+    font-size:14px;
+}
+
+/* ================================================= */
+
+.footer{
+
+    height:40px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    background:#f1f5f9;
+
+    border-top:1px solid #dbe4ee;
+
+    color:#64748b;
+
+    font-size:13px;
+}
+
+/* ================================================= */
+/* Scrollbar */
+
+.workspace::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar,
+.inspector::-webkit-scrollbar,
+.table-container::-webkit-scrollbar,
+.viewer::-webkit-scrollbar{
+
+    width:9px;
+}
+
+.workspace::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb,
+.inspector::-webkit-scrollbar-thumb,
+.table-container::-webkit-scrollbar-thumb,
+.viewer::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:999px;
+}
+
+.workspace::-webkit-scrollbar-thumb:hover,
+.sidebar::-webkit-scrollbar-thumb:hover,
+.inspector::-webkit-scrollbar-thumb:hover,
+.table-container::-webkit-scrollbar-thumb:hover,
+.viewer::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+}

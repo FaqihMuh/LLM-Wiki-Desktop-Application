@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>LLM Wiki Operating System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ===================================================== -->
+
+<header class="header">
+
+<div>
+
+<div class="logo">
+
+LLM Wiki Operating System
+
+</div>
+
+<div class="subtitle">
+
+Persistent Memory Research Assistant
+
+</div>
+
+</div>
+
+<div class="header-status">
+
+Raw Documents
+
+</div>
+
+</header>
+
+<!-- ===================================================== -->
+
+<main class="main">
+
+<!-- ================= Sidebar ================= -->
+
+<aside class="sidebar">
+
+<div class="section-title">
+
+Navigation
+
+</div>
+
+<ul class="menu">
+
+<li class="active">📄 Raw Documents</li>
+
+<li>📑 Summaries</li>
+
+<li>🧠 Entities</li>
+
+<li>📚 Index</li>
+
+<li>📜 Operation Log</li>
+
+</ul>
+
+<div class="divider"></div>
+
+<div class="section-title">
+
+Operations
+
+</div>
+
+<ul class="menu">
+
+<li>🔍 Query</li>
+
+<li>📥 Ingest</li>
+
+<li>🩺 Maintenance</li>
+
+</ul>
+
+</aside>
+
+<!-- ================= Workspace ================= -->
+
+<section class="workspace">
+
+<!-- Search -->
+
+<div class="card">
+
+<div class="card-title">
+
+Search Document
+
+</div>
+
+<div class="search-area">
+
+<input
+type="text"
+placeholder="Search by filename, title, DOI, or arXiv ID..."
+>
+
+</div>
+
+</div>
+
+<!-- Table -->
+
+<div class="card">
+
+<div class="card-title">
+
+Raw Documents
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Filename</th>
+
+<th>Pages</th>
+
+<th>Status</th>
+
+<th>Modified</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr class="selected">
+
+<td>2605.18490v1.pdf</td>
+
+<td>17</td>
+
+<td>Available</td>
+
+<td>2026-06-25</td>
+
+</tr>
+
+<tr>
+
+<td>2605.25480v2.pdf</td>
+
+<td>15</td>
+
+<td>Available</td>
+
+<td>2026-06-25</td>
+
+</tr>
+
+<tr>
+
+<td>2602.02007v3.pdf</td>
+
+<td>18</td>
+
+<td>Available</td>
+
+<td>2026-06-26</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="pagination">
+
+<button>◀ Previous</button>
+
+<span>
+
+Page 1 of 1
+
+</span>
+
+<button>Next ▶</button>
+
+</div>
+
+</div>
+
+<!-- Document Viewer -->
+
+<div class="card viewer-card">
+
+<div class="card-title">
+
+Document Viewer
+
+</div>
+
+<div class="viewer">
+
+<h2>
+
+Beyond RAG for Agent Memory
+
+</h2>
+
+<div class="meta-grid">
+
+<div>
+
+<strong>Filename</strong>
+
+2602.02007v3.pdf
+
+</div>
+
+<div>
+
+<strong>Pages</strong>
+
+18
+
+</div>
+
+<div>
+
+<strong>arXiv ID</strong>
+
+2602.02007
+
+</div>
+
+<div>
+
+<strong>Status</strong>
+
+Available
+
+</div>
+
+</div>
+
+<h3>
+
+Abstract
+
+</h3>
+
+<p>
+
+This paper proposes xMemory, a retrieval framework for long-term agent memory that decouples retrieval and aggregation to improve evidence coverage while reducing redundancy compared with conventional Vector RAG.
+
+</p>
+
+<h3>
+
+Document Metadata
+
+</h3>
+
+<ul>
+
+<li>Source : arXiv</li>
+
+<li>Language : English</li>
+
+<li>Category : Artificial Intelligence</li>
+
+<li>Ingest Status : Completed</li>
+
+</ul>
+
+<h3>
+
+Location
+
+</h3>
+
+<p>
+
+raw/2602.02007v3.pdf
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Inspector ================= -->
+
+<aside class="inspector">
+
+<div class="panel">
+
+<h3>
+
+Selected Document
+
+</h3>
+
+<div class="row">
+
+<span>Filename</span>
+
+<span>2602.02007v3.pdf</span>
+
+</div>
+
+<div class="row">
+
+<span>Pages</span>
+
+<span>18</span>
+
+</div>
+
+<div class="row">
+
+<span>Status</span>
+
+<span>Available</span>
+
+</div>
+
+<div class="row">
+
+<span>Modified</span>
+
+<span>2026-06-26</span>
+
+</div>
+
+</div>
+
+</aside>
+
+</main>
+
+<!-- ===================================================== -->
+
+<footer class="footer">
+
+Raw Documents • Read Only
+
+</footer>
+
+</div>
+
+</body>
+
+</html>

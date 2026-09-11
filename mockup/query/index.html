@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>LLM Wiki Operating System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div>
+
+            <div class="logo">
+
+                LLM Wiki Operating System
+
+            </div>
+
+            <div class="subtitle">
+
+                Persistent Memory Research Assistant
+
+            </div>
+
+        </div>
+
+        <div class="header-status">
+
+            Query Mode
+
+        </div>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="section-title">
+
+                Navigation
+
+            </div>
+
+            <ul class="menu">
+
+                <li>📄 Raw Documents</li>
+
+                <li>📑 Summaries</li>
+
+                <li>🧠 Entities</li>
+
+                <li>📚 Index</li>
+
+                <li>📜 Operation Log</li>
+
+            </ul>
+
+            <div class="divider"></div>
+
+            <div class="section-title">
+
+                Operations
+
+            </div>
+
+            <ul class="menu">
+
+                <li class="active">
+
+                    🔍 Query
+
+                </li>
+
+                <li>
+
+                    📥 Ingest
+
+                </li>
+
+                <li>
+
+                    🩺 Maintenance
+
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- ================= WORKSPACE ================= -->
+
+        <!-- WORKSPACE -->
+
+<section class="workspace">
+
+    <!-- QUERY -->
+
+    <div class="card">
+
+        <div class="card-title">
+
+            🔍 Query
+
+        </div>
+
+        <div class="query-box">
+
+            <textarea
+                placeholder="Ask something about your Persistent Memory..."
+            ></textarea>
+
+            <button>
+
+                Query
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ANSWER -->
+
+    <div class="card">
+
+        <div class="card-title">
+
+            📘 Answer
+
+        </div>
+
+        <div class="card-content">
+
+            <p>
+
+                Vector RAG adalah arsitektur retrieve-then-generate
+                yang melakukan satu kali retrieval sebelum proses
+                generasi jawaban.
+
+            </p>
+
+            <br>
+
+            <h4>Cara Kerja</h4>
+
+            <p>
+
+                Dokumen diubah menjadi embedding, dilakukan similarity
+                search, kemudian chunk terbaik digunakan sebagai konteks
+                LLM.
+
+            </p>
+
+            <br>
+
+            <h4>Kelebihan</h4>
+
+            <ul>
+
+                <li>Biaya rendah</li>
+
+                <li>Latensi cepat</li>
+
+                <li>Grounded untuk point-source retrieval</li>
+
+            </ul>
+
+            <br>
+
+            <h4>Keterbatasan</h4>
+
+            <ul>
+
+                <li>Kurang baik untuk multi-hop reasoning.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- EVIDENCE -->
+
+    <div class="split-card">
+
+        <div class="card">
+
+            <div class="card-title">
+
+                📚 Evidence
+
+            </div>
+
+            <div class="card-content">
+
+                ✓ Vector_RAG.md
+
+                <br><br>
+
+                ✓ LLM_Wiki.md
+
+                <br><br>
+
+                ✓ vector_rag_vs_llm_wiki.md
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-title">
+
+                🔗 Related Entities
+
+            </div>
+
+            <div class="card-content">
+
+                • Vector_RAG
+
+                <br><br>
+
+                • LLM_Wiki
+
+                <br><br>
+
+                • Decomposition_RAG
+
+                <br><br>
+
+                • Claim_Level_Citation_Grounding
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SOURCES -->
+
+    <div class="card">
+
+        <div class="card-title">
+
+            📄 Sources
+
+        </div>
+
+        <div class="card-content">
+
+            • Cochran, T.O. (2026)
+
+            <br><br>
+
+            • Ming et al. (2026)
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ================= INSPECTOR ================= -->
+
+        <aside class="inspector">
+
+            <div class="panel">
+
+                <h3>
+
+                    Runtime
+
+                </h3>
+
+                <div class="row">
+
+                    <span>Status</span>
+
+                    <span>Finished</span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Duration</span>
+
+                    <span>18 s</span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Tokens</span>
+
+                    <span>8,214</span>
+
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>
+
+                    Working Memory
+
+                </h3>
+
+                <div class="row">
+
+                    <span>Focus</span>
+
+                    <span>Vector RAG</span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Last Question</span>
+
+                    <span>Available</span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Last Answer</span>
+
+                    <span>Available</span>
+
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>
+
+                    Evidence
+
+                </h3>
+
+                <div class="row">
+
+                    <span>Entities</span>
+
+                    <span>2</span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Summaries</span>
+
+                    <span>1</span>
+
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>
+
+                    Pipeline
+
+                </h3>
+
+                <ul class="pipeline">
+
+                    <li>✓ Question Analysis</li>
+
+                    <li>✓ Evidence Planning</li>
+
+                    <li>✓ Entity Retrieval</li>
+
+                    <li>✓ Evidence Validation</li>
+
+                    <li>✓ Reasoning</li>
+
+                    <li>✓ Answer</li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        Query Completed • Persistent Memory Ready
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
