@@ -1,4 +1,4 @@
-![LLM Wiki Desktop](screenshots/gambar produk.png)
+![LLM Wiki Desktop](screenshots/gambarproduk.png)
 
 ## Download
 
@@ -33,4 +33,3 @@ Watch the video demonstration of LLM Wiki Desktop on YouTube:
 ![Knowledge Explorer - Index](screenshots/index.png)
 
 ![Knowledge Explorer - Operation Log](screenshots/log.png)
-![Main Window](screenshots/mainwindow.p
